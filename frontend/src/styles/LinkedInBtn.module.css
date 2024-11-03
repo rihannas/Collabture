@@ -1,0 +1,36 @@
+.button {
+  border: 1px solid whitesmoke;
+  width: fit-content;
+  padding: 4px 7px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgb(16, 121, 173);
+  border-radius: 0.2em;
+  height: fit-content;
+  position: relative;
+  position: relative;
+  transition: border 5ms ease-in-out;
+}
+.button::after,
+.button::before {
+  content: '';
+  background-color: aliceblue;
+  border-radius: 0.2em;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: -10;
+  right: -1px;
+}
+
+.button::before {
+  filter: blur(0.3em);
+  opacity: 0.5;
+}
+
+.button:hover {
+  border: none;
+  cursor: pointer;
+}

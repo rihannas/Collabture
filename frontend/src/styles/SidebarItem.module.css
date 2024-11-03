@@ -1,0 +1,19 @@
+.nav_item {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 12px;
+  margin-top: 14px;
+  margin-left: 1rem;
+}
+
+.nav_item:hover {
+  background-color: #11120d;
+}
+
+.text {
+  width: 52px;
+  margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  justify-content: space-evenly;
+  height: fit-content;
+  position: absolute;
+  bottom: 0px;
+  right: -5px;
+  margin-right: 0px;
+}
+.heart_button {
+  margin-bottom: 3px;
+}
+
+.bookmark_button,
+.heart_button {
+  background-color: transparent;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.heart_icon {
+  color: rgb(255, 79, 79);
+}

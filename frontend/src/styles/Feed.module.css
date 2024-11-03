@@ -1,0 +1,8 @@
+.feed {
+  margin: 30px 15px;
+  display: flex;
+}
+
+.notion {
+  flex: 1fr;
+}
