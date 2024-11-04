@@ -1,10 +1,15 @@
 /* eslint-disable react/prop-types */
 import styles from '../styles/Notion.module.css';
 import ProfileDisplay from './ProfileDisplay';
+
 import LinkedInButton from './LinkedInButton';
 import InteractiveButtons from './InteractiveButtons';
 
-const Notion = ({ text }) => {
+interface NotionProps {
+  text: string;
+}
+
+const Notion = ({ text }: NotionProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.top_container}>

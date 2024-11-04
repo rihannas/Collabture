@@ -1,7 +1,8 @@
 import styles from '../styles/NavBar.module.css';
 
 const NavBar = () => {
-  const filters = [
+  // this should come from the backend
+  const filters: string[] = [
     'ui/ux',
     'frontend',
     'backend',
@@ -14,7 +15,7 @@ const NavBar = () => {
   return (
     <div className={styles.nav}>
       <ul className={styles.navBar}>
-        {filters.map((filter, idx) => {
+        {filters.map((filter: string, idx: number) => {
           return (
             <li
               className={styles.navItem}

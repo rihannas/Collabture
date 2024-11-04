@@ -1,9 +1,7 @@
 import ProfileDisplay from './ProfileDisplay';
 import styles from '../styles/Prompt.module.css';
-import { useState } from 'react';
 
 const Prompt = () => {
-  const [state, setState] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.top_container}>

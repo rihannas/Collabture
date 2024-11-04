@@ -8,8 +8,8 @@ import {
 } from '@fortawesome/free-regular-svg-icons';
 
 const InteractiveButtons = () => {
-  const [heartToggle, setHeartToggle] = useState(false);
-  const [bookmarkToggle, setBookmarkToggle] = useState(false);
+  const [heartToggle, setHeartToggle] = useState<boolean>(false);
+  const [bookmarkToggle, setBookmarkToggle] = useState<boolean>(false);
 
   function handleHeartToggle() {
     setHeartToggle(!heartToggle);

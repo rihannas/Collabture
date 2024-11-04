@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Feed from '../Components/Feed';
 import styles from '../styles/FeedPage.module.css';
 import Header from '../Components/Header';
@@ -6,7 +5,6 @@ import NavBar from '../Components/NavBar';
 import Prompt from '../Components/Prompt';
 
 const FeedPage = () => {
-  const [hovered, setHovered] = useState(false);
   return (
     <div className={styles.container}>
       <div className={styles.top}>

@@ -1,7 +1,13 @@
 import styles from '../styles/SidebarItem.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 
-const SideBarItem = ({ icon, text }) => {
+interface SideBarItemProps {
+  icon: IconDefinition;
+  text: string;
+}
+
+const SideBarItem = ({ icon, text }: SideBarItemProps) => {
   return (
     <li className={styles.nav_item}>
       <FontAwesomeIcon
